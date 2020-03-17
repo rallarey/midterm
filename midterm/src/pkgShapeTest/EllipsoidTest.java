@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import pkgShape.Ellipse;
 import pkgShape.Ellipsoid;
 
 public class EllipsoidTest {
