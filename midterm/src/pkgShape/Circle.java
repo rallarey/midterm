@@ -1,6 +1,6 @@
 package pkgShape;
 
-public class Circle extends Shape implements Comparable {
+public class Circle extends Shape implements Comparable<Object> {
 
 	private double Radius;
 	
@@ -26,9 +26,8 @@ public class Circle extends Shape implements Comparable {
 	}
 		
 	public int compareTo(Object o) {
+		return (int) (this.Radius - ((Circle) o).getRadius());
 		
 	}
-		
-		
-	
+
 }
