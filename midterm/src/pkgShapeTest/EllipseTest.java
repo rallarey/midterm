@@ -4,11 +4,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class EllipseTest {
+import pkgShape.Ellipse;
+
+public class EllipseTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void EllipseTest() {
+		Ellipse e1 = new Ellipse(10.0, 20.0);
+		
+		assertEquals(628.32, e1.area(), 0.01);
 	}
 
 }

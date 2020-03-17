@@ -4,11 +4,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class EllipsoidTest {
+import pkgShape.Ellipse;
+import pkgShape.Ellipsoid;
+
+public class EllipsoidTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void EllipsoidTest() {
+		Ellipsoid ellipsoid1 = new Ellipsoid(10.0, 20.0, 25.0);
+		
+		assertEquals(20943.95, ellipsoid1.volume(), 0.01);
 	}
 
 }

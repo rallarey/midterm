@@ -2,7 +2,7 @@ package pkgShape;
 
 public class Circle extends Shape implements Comparable<Object> {
 
-	private double Radius;
+	protected double Radius;
 	
 	public Circle(double Radius)
 	{
@@ -13,7 +13,7 @@ public class Circle extends Shape implements Comparable<Object> {
 		if (Radius > 0) {
 			return Math.PI * (Radius*Radius);
 		} else {
-			throw new IllegalArgumentException("n must be positive");
+			throw new IllegalArgumentException("radius must be positive");
 		}
 	}
 		
