@@ -4,11 +4,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class CircleTest {
+import pkgShape.Circle;
+import pkgShape.Rectangle;
+
+public class CircleTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void CircleTest() throws Exception{
+		Circle c1 = new Circle(10.0);
+		
+		assertEquals(314.15, c1.area(), 0.01);
 	}
 
 }
