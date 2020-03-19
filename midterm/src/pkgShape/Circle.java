@@ -26,7 +26,12 @@ public class Circle extends Shape implements Comparable<Object> {
 	}
 		
 	public int compareTo(Object o) {
-		return (int) (this.Radius - ((Circle) o).getRadius());
+		try {
+			return (int) (this.area() - ((Circle) o).area());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return 0;
 		
 	}
 
