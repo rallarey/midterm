@@ -6,6 +6,11 @@ public class Ellipse extends Circle implements Comparable<Object>{
 	
 	public Ellipse(double Radius, double MinorRadius) {
 		super(Radius);
+		
+		if (Radius <= 0 && MinorRadius <= 0) {
+			throw new IllegalArgumentException("both radii must be positive");
+		}
+		
 		this.Radius = Radius;
 		this.MinorRadius = MinorRadius;
 	}
@@ -19,11 +24,7 @@ public class Ellipse extends Circle implements Comparable<Object>{
 	}
 	
 	public double area() {
-		if (Radius > 0 && MinorRadius > 0) {
-			return Math.PI * (Radius*MinorRadius);
-		} else {
-			throw new IllegalArgumentException("both radii must be positive");
-		}
+		return Math.PI * (Radius*MinorRadius);
 	}
 	
 	public boolean isCircle() {
